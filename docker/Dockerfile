@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Add the bot JAR file to the container
-ADD https://gitlab.com/Bettehem/ts3-musicbot/-/raw/master/ts3-musicbot.jar /opt/ts3-musicbot/ts3-musicbot.jar
+ADD https://gitlab.com/Bettehem/ts3-musicbot/-/jobs/4962112752/artifacts/raw/out/artifacts/ts3_musicbot/ts3-musicbot.jar /opt/ts3-musicbot/ts3-musicbot.jar
 
 # Create a config file for the bot
 RUN echo "SERVER_ADDRESS=myserver.com" > /opt/ts3-musicbot/ts3-musicbot.config
